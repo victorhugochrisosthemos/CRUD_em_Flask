@@ -1,0 +1,99 @@
+
+
+Canal Programando com Roger
+https://www.youtube.com/watch?v=WDpPGFkI9UU
+
+----------------------------------------
+
+pip install flask
+
+pip install flask_sqlalchemy
+
+pip install mysql_connector-python
+
+pip install mysqlclient
+
+
+-----------------------
+comandos no terminal no projeto
+
+-> python
+
+-> from app import db
+
+-> db.create_all()
+
+-----------------------
+
+python app.py
+
+--------------------------
+
+USE youtube;
+
+INSERT INTO `usuario` (`nome`, `email`) VALUES ('teste', 'teste@teste.com')
+
+
+-----------------------------------------
+
+USE youtube;
+
+select * from `usuario`;
+
+-------------------------------------
+
+Estou usando o postman desktop para fazer requisições locais
+
+https://www.bing.com/ck/a?!&&p=e23969474e80d560JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOGZhODM0NC0wZmI0LTYxZjktMDY4MS05NzBhMGVlMzYwNzMmaW5zaWQ9NTIwNg&ptn=3&ver=2&hsh=3&fclid=38fa8344-0fb4-61f9-0681-970a0ee36073&psq=postman&u=a1aHR0cHM6Ly93d3cucG9zdG1hbi5jb20v&ntb=1
+
+-----------------------------------------
+
+Requerimento get para usuarios
+
+http://127.0.0.1:5000/usuarios
+
+-------------------------------------
+
+Requerimento get para usuario
+
+
+http://127.0.0.1:5000/usuario/1
+
+---------------------------------
+
+Requerimento post para cadastrar
+
+body->raw->JSON
+
+http://127.0.0.1:5000/usuario/2
+
+{
+    "nome": "teste123",
+    "email": "teste123@teste.com"
+}
+
+
+---------------------------------
+
+Requerimento put para atualizar
+
+body->raw->JSON
+
+http://127.0.0.1:5000/usuario/2
+
+{
+    "nome": "bot",
+    "email": "bot@bot.com"
+}
+
+
+---------------------------------
+
+Requerimento delete para deletar
+
+body->none
+
+http://127.0.0.1:5000/usuario/2
+
+
+
